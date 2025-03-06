@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         alert("Form submitted successfully!");
-        form.reset();
+        
+        // Redirect to sixth.html
+        window.location.href = "sixth.html";
     });
 });
