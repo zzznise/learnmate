@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnMate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .calendar-box {
+            margin: 20px 0;
+        }
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar-table th, .calendar-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .calendar-table th {
+            background-color: #007bff;
+            color: white;
+        }
+        .events .event {
+            background: #ffeb3b;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #ffc107;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .nav-item {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu">&#9776;</div>
+            <h1>Welcome to LearnMate!</h1>
+            <img src="logo.png" alt="LearnMate Logo" class="logo">
+        </header>
+        
+        <section class="calendar">
+            <h2>My Calendar</h2>
+            <div class="calendar-box">
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- Calendar dates will be injected by JavaScript -->
+                    </tbody>
+                </table>
+                <p>Good Job! You have finished all of your tasks for today.</p>
+            </div>
+        </section>
+        
+        <section class="events">
+            <h2>My upcoming events</h2>
+            <div class="event">
+                <h3>March 10</h3>
+                <p>Face to face tutor session with Ms. Euna Nicdao (educator)</p>
+                <span class="time">1:00 PM</span> <span class="subject">MATH</span>
+            </div>
+            <div class="event">
+                <h3>March 13</h3>
+                <p>Study Group with Denise Ancheta (educator)</p>
+                <span class="time">11:30 AM</span> <span class="subject">SCIENCE</span>
+            </div>
+        </section>
+        
+        <nav>
+            <div class="nav-item">Profile</div>
+            <div class="nav-item">Meeting</div>
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Subjects</div>
+            <div class="nav-item">Progress</div>
+        </nav>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const calendarBody = document.getElementById("calendar-body");
+            let date = 1;
+            for (let i = 0; i < 5; i++) {
+                let row = document.createElement("tr");
+                for (let j = 0; j < 7; j++) {
+                    let cell = document.createElement("td");
+                    if (date <= 31) {
+                        cell.textContent = date;
+                        date++;
+                    }
+                    row.appendChild(cell);
+                }
+                calendarBody.appendChild(row);
+            }
+        });
+    </script>
+</body>
+</html>
