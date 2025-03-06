@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+}
+
+/* CALENDAR SECTION */
+.calendar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar-container {
+    width: 50%;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1c40f;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.calendar-grid div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar-grid .event-day {
+    background: #0056b3;
+    color: white;
+    font-weight: bold;
+}
+
+/* EVENTS SECTION */
+.events-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1c40f;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification img {
+    width: 30px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 3px 6px;
+}
+
+/* EVENT ITEMS */
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.event h4 {
+    color: #0056b3;
+    margin: 0;
+}
+
+.event p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.subject {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* BOTTOM NAVIGATION */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f1c40f;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-item img {
+    width: 30px;
+}
+
+.nav-item span {
+    display: block;
+    font-size: 12px;
+}

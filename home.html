@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnMate Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <span class="menu-icon">&#9776;</span>
+        <h2>Welcome to LearnMate!</h2>
+        <img src="https://media.discordapp.net/attachments/1001455498652045314/1347184620197773342/481678746_1218290719627083_5576038220991364822_n.png?ex=67cae6f2&is=67c99572&hm=c69d624f75811acb46f900d4abfba076f3b8740b7d04f7b6166049a92c846589&=&format=webp&quality=lossless&width=271&height=237" alt="LearnMate Logo" class="logo">
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <!-- Calendar Section -->
+        <div class="calendar-section">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <h3 id="currentMonth"></h3>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <div class="calendar-grid" id="calendar"></div>
+            </div>
+            <p class="task-status">Good Job! You have finished all of your tasks for today.</p>
+          
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="events-section">
+            <div class="events-header">
+                <h3>My upcoming events</h3>
+                <span class="notification">
+                    <img src="https://media.discordapp.net/attachments/1001455498652045314/1347214592190844938/image.png?ex=67cb02dc&is=67c9b15c&hm=c71f5b762aa18d190207754bca6bf67c15176c334c255125e8f612f953e80cb8&=&format=webp&quality=lossless&width=68&height=52" alt="Mail">
+                    <span class="badge">1</span>
+                </span>
+            </div>
+
+            <div class="event">
+                <h4>March 10</h4>
+                <p>Face to face tutor session <br>
+                <small>with Ms. Euna Nicdao (educator)</small></p>
+                <span class="time">1:00 PM</span>
+                <span class="subject">MATH</span>
+            </div>
+
+            <div class="event">
+                <h4>March 13</h4>
+                <p>Study Group <br>
+                <small>with Denise Ancheta (educator)</small></p>
+                <span class="time">11:30 AM</span>
+                <span class="subject">SCIENCE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+        <div class="nav-item">
+            <img src="https://media.discordapp.net/attachments/1001455498652045314/1347187427990573098/image.png?ex=67cae990&is=67c99810&hm=f36b733cbd5f515f7e02ffdcf6dd830041f044346996c787784878a4a0baea34&=&format=webp&quality=lossless&width=70&height=55" alt="Profile">
+            <span>Profile</span>
+        </div>
+        <div class="nav-item">
+            <img src="https://media.discordapp.net/attachments/1001455498652045314/1347188337185919016/image.png?ex=67caea69&is=67c998e9&hm=43cff3ba6e67108cb78407a879fcc59b79a97c1d8b581fd4e0d318c3d434d4b8&=&format=webp&quality=lossless&width=45&height=49" alt="Meeting">
+            <span>Meeting</span>
+        </div>
+        <div class="nav-item">
+            <img src="https://media.discordapp.net/attachments/1001455498652045314/1347186819565097010/482287823_1650038615604523_5661917279681405291_n.jpg?ex=67cae8ff&is=67c9977f&hm=32baff2a5578d83c00aa6fdd1db1ff8fe67e2bf70170d0cd195192e679ca3ddc&=&format=webp&width=670&height=670" alt="Home">
+            <span>Home</span>
+        </div>
+        <div class="nav-item">
+            <img src="https://media.discordapp.net/attachments/1001455498652045314/1347187800340037723/image.png?ex=67cae9e9&is=67c99869&hm=29f6acf9643311a877fe254910b9a7e46916499d11e2f6c4807997600d0b237f&=&format=webp&quality=lossless&width=57&height=55" alt="Subjects">
+            <span>Subjects</span>
+        </div>
+        <div class="nav-item">
+            <img src="https://media.discordapp.net/attachments/1001455498652045314/1347188765684269056/image.png?ex=67caeacf&is=67c9994f&hm=3daf400a82f0602e52ac70ff8436d30849fd47c1a1d40dd4b92fe0f38301c5ce&=&format=webp&quality=lossless&width=61&height=47" alt="Progress">
+            <span>Progress</span>
+        </div>
+    </nav>
+
+</body>
+</html>
